@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CouChess</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-gradient-to-br from-blue-300 via-blue-100 to-blue-300 min-h-screen w-full">
+    <div id="parent-container" class="max-w-6xl mx-auto p-4 flex flex-col gap-2 md:gap-2">
+        <header class="mb-2">
+        <!-- heading -->
+        <h1 class="text-6xl p-8 bg-gradient-to-r from-green-900 to-green-100 bg-clip-text text-transparent font-bold">
+          CouChess
+        </h1>
+        <!-- description -->
+        <p class="text-xl text-black-700 italic flex items-center gap-2 px-4">
+        Welcome to<span class="font-bold text-green-600">CouChess</span>, the chess timer for the elite!
+        </p>
+        </header>
+    <main>
+      <!-- main game screen id-gamepage-->
+    <div class="flex flex-col md:flex-row w-full min-h-auto justify-center items-center gap-8 px-4" id="gamepage">
+        <!-- settings button -->
+        <button
+          class="w-20 h-20 bg-blue-500 text-white text-3xl rounded-full flex items-center justify-center shadow-lg hover:bg-blue-700 transition group-element"
+          id="settings" 
+        >
+          &#9881;
+        </button>
+
+        <!-- main timer -->
+        
+        <div class="h-auto min-h-[400px] w-full max-w-[500px] px-2 grid grid-rows-2">
+            <!-- player1's timer -->
+            <div id="p1_timer" class="bg-orange-400 flex items-center justify-center rounded-t-3xl shadow-lg font-bold  h-64 ">
+              <span class="text-5xl">
+                00:30
+              </span>
+            </div>
+            <!-- player2's timer -->
+            <div id="p2_timer" class="bg-lime-400 flex items-center justify-center rounded-b-3xl shadow-lg font-bold text-3xl h-64">
+             <span class="text-5xl" >
+               00:30
+             </span>
+            </div>
+        </div>
+
+        <!-- count and name -->
+        <div class="flex flex-col justify-center items-center space-y-6 p-4 bg-white/70 rounded-xl shadow-lg">
+          <div class="h-12 w-32 bg-red-400 flex items-center justify-center rounded font-bold" id="countp1">0</div>
+          <div class="h-12 w-32 bg-red-400 flex items-center justify-center rounded font-bold" id="countp2">0</div>
+        </div>
+      </div>
+    </div>
+    </main>
+    <!-- footer -->
+    <footer class="w-full mt-8 py-4 bg-gradient-to-r from-green-800 to-green-200 text-center text-black-700 text-sm font-semibold shadow-inner">
+      <span>
+        &copy; 2025 CouChess &mdash; Made by VJ
+      </span>
+    </footer>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
